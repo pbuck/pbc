@@ -1,0 +1,461 @@
+//colors
+$color_iron_approx: #d8d8d8;
+$color_curious_blue_approx: #3889e7;
+$color_gravel_approx: #4b4b4b;
+$white: white;
+
+//urls
+$url_0: url( /assets/imgs/Logo.svg);
+
+.logo {
+	width: 105px;
+	height: 162px;
+	background-image: $url_0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto !important;
+	margin-top: 160px !important;
+	margin-bottom: 32px !important;
+}
+.tit {
+	text-align: center !important;
+	width: 100% !important;
+	font-size: 56px !important;
+	margin-bottom: 8px !important;
+}
+.sub {
+	text-align: center !important;
+	width: 100% !important;
+	font-size: 40px !important;
+}
+.site-nav {
+	text-align: center;
+	float: none !important;
+}
+.bar {
+	padding-top: 160px;
+	padding-bottom: 32px;
+	text-align: center !important;
+}
+.icon-button {
+	background-color: $color_iron_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block !important;
+	font-size: 2.0rem;
+	height: 3.6rem !important;
+	line-height: 3.6rem !important;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	//Instead of the line below you could use @include user-select($select)
+	user-select: none;
+	width: 3.6rem !important;
+	margin-left: 32px !important;
+	margin-right: 32px !important;
+	span {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0;
+		display: block;
+		height: 0;
+		left: 50%;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		transition: all 0.3s;
+		width: 0;
+	}
+	&:hover {
+		span {
+			width: 3.6rem;
+			height: 3.6rem;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 3.6rem;
+			margin: -1.8rem;
+		}
+		.icon-connect {
+			color: $white;
+		}
+		.icon-about {
+			color: $white;
+		}
+		.icon-work {
+			color: $white;
+		}
+	}
+    
+    
+	i {
+		background: none;
+		color: $color_gravel_approx;
+		height: 3.6rem;
+		left: 0;
+		line-height: 3.6rem;
+		position: absolute;
+		top: 0;
+		transition: all 0.3s;
+		width: 3.6rem;
+		z-index: 10;
+	}
+	.icon-about {
+		color: $color_gravel_approx;
+	}
+	.icon-work {
+		color: $color_gravel_approx;
+	}
+	.icon-connect {
+		color: $color_gravel_approx;
+	}
+}
+.about span {
+	background-color: $color_curious_blue_approx;
+}
+.work span {
+	background-color: $color_curious_blue_approx;
+}
+.connect span {
+	background-color: $color_curious_blue_approx;
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes spin {
+	from {
+	}
+	to {
+	}
+}
+@-moz-keyframes spin {
+	from {
+	}
+	to {
+    
+  }
+}
+@keyframes spin {
+	from {
+		transform: rotate(180deg);
+	}
+	to {
+		
+		transform: rotate(270deg);
+	}
+}
+@-webkit-keyframes reverse-spin {
+	from {
+	}
+	to {
+	}
+}
+@-moz-keyframes reverse-spin {
+	from {
+	}
+	to {
+	}
+}
+@keyframes reverse-spin {
+	from {
+		
+		transform: rotate(270deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+.btn-primary {
+	&:before {
+		display: inline-block;
+		
+		
+		transform: translateY(0.1em);
+	}
+	&.reverse-animation:before {
+		animation-name: reverse-spin;
+		animation-duration: 300ms;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+	}
+	&.active:before {
+		display: inline-block;
+		animation-name: spin;
+		animation-duration: 300ms;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		
+	}
+}
+.btn-secondary {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: scaleY(0.4) scaleX(0.4);
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.4s cubic-bezier(1, 0.06, 0.66, 1.45);
+	opacity: 0;
+	margin-left: -120px;
+	&:hover {
+			
+            background-color: white;
+            -webkit-box-shadow:inset 0px 0px 0px 2px #d8d8d8;
+    -moz-box-shadow:inset 0px 0px 0px 2px #d8d8d8;
+    box-shadow:inset 0px 0px 0px 2px #d8d8d8;
+		
+		.icon-twit {
+			color: #1DA1F2;
+		}
+		.icon-drib {
+			color: #EA4C89;
+		}
+		.icon-med {
+			color: #00AB6C;
+		}
+        .icon-mail {
+			color: $brand-color;
+		}
+    }
+}
+.btn-floating {
+	
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	color: $white;
+	margin-left: 10px;
+}
+.btn-large {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	font-size: 2.4em;
+}
+.fixed-action-btn {
+	position: relative;
+	top: 50px;
+	width: 50px;
+	margin: auto;
+}
+.twt {
+	background-color: #1DA1F2;
+}
+.drb {
+	background-color: #EA4C89;
+}
+.med {
+	background-color: #00AB6C;
+}
+.mail {
+	background-color: $brand-color;
+}
+ul.damn {
+
+    position: absolute !important;
+	display: inline-flex;
+	list-style-type: none;
+	padding: 0;
+    margin-left: -70px;
+    margin-top: 10px;
+    }
+#btn-main.active + ul > li > a {
+	transform: scaleY(1) scaleX(1) translateX(40px);
+	opacity: 1;
+}
+
+
+
+// MQ trigger
+@mixin small {
+  @media only screen and (max-width: 766px) {
+    @content;
+  }
+}
+
+// colores
+$color: #8f8f8f;
+$color2: #e8f380;
+
+// Navigation
+.main_h {
+  position: fixed;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+  @include small {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+  .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+}
+
+.sticky {
+  background-color:$background-color;
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid lighten($background-color, 30%);
+}
+
+.slogo {
+  width: 280px;
+  font-size: 20px;
+  color: $color;
+  float: left;
+  display: block;
+  margin-top: 10px;
+  line-height: 1;
+  margin-bottom: 10px;
+  @include small {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+  @include small {
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+    @include small {
+      padding-top: 10px;
+      margin-bottom: 22px;
+      float: left;
+      text-align: center;
+      width: 100%;
+    }
+
+    li {
+      display: inline-block;
+      margin-left: 35px;
+      line-height: 1.5;
+      @include small {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+      }
+    }
+    a {
+      color: #888888;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  @include small {
+    display: block;
+  }
+
+  span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: $color;
+    display: block;
+  }
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+
+
+.mouse {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 46px;
+    border-radius: 13px;
+    border: 2px solid #888888;
+    margin-bottom: 32px;
+  span {
+    display: block;
+    margin: 6px auto;
+    width: 2px;
+    height: 2px;
+    border-radius: 4px;
+    background: $brand_color;
+    border: 1px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}

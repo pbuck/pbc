@@ -1,0 +1,52 @@
+<section id=about class="abt">
+<h2> About Me</h2> 
+    
+    <div class= "face"></div>
+<div class="intro">
+    <div class=blurb> {{site.blurb}}
+    </div>
+    </div>
+
+<div class="skills">
+    <h2> Skills </h2>
+    {% if site.skills %}
+
+  <div class="skill-lockup">
+
+    {% for skill in site.skills %}
+
+      <div class="skill-unit">
+        <div class="skill-label">{{ skill.name }}</div>
+        <div class="skill-icons skill-{{ skill.value }}">
+          {% for i in (1..10) %}
+            <span></span>
+          {% endfor %}
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+  {% endif %}
+    </div>
+
+    
+<div class="exp">
+    <h2>Experience</h2>
+    <div class="jobtable">
+     {% for job in site.jobs %}    
+    <div class="job-1">
+    <h3> {{job.co}}</h3>
+    <h4> {{job.pos}}</h4>
+    <div class="info">{{job.info}}</div>
+    </div>
+    
+     {% endfor %}
+    </div>
+    
+    </div>
+    <div class="cap">
+    <a class= "callout" href=#resume> Download Resume</a>
+</div>
+</section>

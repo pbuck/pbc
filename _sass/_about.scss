@@ -1,0 +1,114 @@
+
+.abt {
+    padding: 0 16px;
+
+  
+    p {
+        text-align: justify;
+    }
+}
+.face {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: $brand-color;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+.intro {
+        width: 70%;
+    margin: 0 auto;
+}
+.exp {
+    width: 100%;
+}
+
+.skills{
+    width: 100%; 
+    padding: 8px 0 8px 0;
+}
+.skill-lockup{
+    min-width: 765px;
+ text-align: center;
+    height: 250px;
+    width: 65%;
+    margin: auto;
+ 
+}
+.skill-label{
+    font-family: montserratlight;
+    text-align: left;
+}
+.skill-unit{
+    width: 220px;
+    display:inline-block;
+        margin: 0 16px 0 16px;
+}
+.skill-icons {
+    font-size: 0;
+    margin: 3px 0 30px;
+
+    span {
+      display: inline-block;
+      height:14px;
+      width:14px;
+      
+      background-color: $brand-color;
+      margin-right: 8px;
+      border-radius: 50%;
+          }
+@for $i from 1 through 10 {
+    &.skill-#{$i} span:nth-child(n+#{$i+1})
+    {@extend %skill-color}
+    }}
+     
+   
+
+
+%skill-color {
+  background-color: $background-color;
+ -webkit-box-shadow:inset 0px 0px 0px 2px $brand-color;
+    -moz-box-shadow:inset 0px 0px 0px 2px $brand-color;
+    box-shadow:inset 0px 0px 0px 2px $brand-color;;
+}
+
+    @media screen and (max-width: 541px) {
+    .skill-lockup{
+    width: 220px
+        }
+        .skill-unit{
+      width: 220px
+    }}
+
+.jobtable {
+    text-align: center;
+    padding: 8px;
+    border: solid 2px $brand-secondary;
+    margin: 0 auto;
+            h3,h4 { text-align: center; 
+                    margin-bottom: 8px;        
+            }
+    .info { font-size: 12px;
+        font-family: montserratlight;
+    }
+        
+    
+}
+
+[class^="job-"] {
+    height: 300px;
+    display: inline-table;
+    width: 30%;
+    margin:0 8px 0 8px;
+    }
+
+.cap {
+    
+    /* margin: 0 auto; */
+    margin-top: 16px;
+    padding-bottom: 32px;
+    width: 100%;
+    text-align: center;
+}

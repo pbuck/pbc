@@ -1,0 +1,60 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Phil Buckley || Designer
+email: Phil@pbuck.co
+description: > # this means to ignore newlines until "baseurl:"
+ Hungry Maker from Philadelphia, Always learning and looking forward.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.pbuck.co" # the base hostname & protocol for your site
+twitter_username: pbuck
+github_username: pbuck
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+# About Blurb
+blurb: <p> Phil is a maker, that found has way from business school to product design. He loves designing experiences for people that improve the way use websites and applications. In his spare time when hes not making things, Phil listens to music, plays games, watches is beloved Philly sports teams lose. Every. Damn. Year. </p>
+
+# Resume Thangs
+
+# Skills
+
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Web Development, value: '6'}
+- {name: Visual Design, value: '8'}
+- {name: UX Design, value: '8'}
+- {name: Prototyping, value: '6'}
+- {name: Information Architechture, value: '5'}
+- {name: User Research, value: '5'}
+
+
+# Jobs
+
+
+jobs:
+- {co: Razorfish Health,
+pos: Project Coordinator,
+info: "<ul> <li>Coordinated with designers and developers to make sure deliverables were completed on time and handed off to the next phase of developement.</li><li> - Used Oracle applications to create and modify job codes, assign roles and monitor project progress.</li><li> -Created new Excel-based tools to enhance coworkers’ workflow.</li><li> -Worked on projects for clients such as, Pfizer, Rite Aid, PEW and Genomma</li></ul>"}
+
+# Job Box 2
+- {co: Buckley Design,
+pos: Freelance,
+info:  "<ul> <li>- Use various design applications like Sketch 3, Photoshop and Illustrator to create for work in both print and web mediums.</li>
+<li>- Pitch Clients with various executions pertaining to their Idententy, Brand strategy and social media outreach.</li>
+<li>- Worked for mobile applications Like Scholly designing their logo, as well as various branding materials for their launch.</li>
+</ul>" } 
+
+# Job Box 3
+- {co: Oracle - Primavera PGBu,
+pos: UX Designer,
+info: "<ul><li> - Creating wireframes, interactive prototypes, functional specifications, visual designs and style specifications for Primavera enterprise client/server applications for web, mobile and tablet. </li><li> - Participating in requirements gathering and functionality ideation processes to merge new features, such as retrofitted modulated portions of functionality into existing software, as well as conceptualized additional features into large scale enterprise software. </li><li> - Initiated the endeavor of converting the library icons from bitmap images to a vector based icon font to allow for scaling and increase in performance within our application.</li><li> - Maintaining the component library to allow for rapid production of high resolution visuals. </li><li> - Animating UI to better communication interactions to team.  </li></ul>" }
+ 
