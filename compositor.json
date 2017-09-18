@@ -89,18 +89,9 @@
   },
   "content": [
     {
-      "component": "nav",
-      "links": [
-        {
-          "href": "https://github.com/pbuck/pbc",
-          "text": "GitHub"
-        }
-      ]
-    },
-    {
       "component": "header",
-      "heading": "pbc",
-      "subhead": "personal site",
+      "heading": "Phil Buckley",
+      "subhead": "Experience Designer",
       "children": [
         {
           "component": "ui/TweetButton",
@@ -112,7 +103,9 @@
           "user": "pbuck",
           "repo": "pbc"
         }
-      ]
+      ],
+      "slug": "",
+      "text": ""
     },
     {
       "component": "footer",
